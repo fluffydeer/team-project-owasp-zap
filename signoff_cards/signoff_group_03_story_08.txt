@@ -1,0 +1,17 @@
+SIGNOFF CARD
+
+Group:                                     03
+User Story:                                08 ("Typosquatting Prevention")
+Level of completeness:                     Completed.
+Date completed:                            07/11/2019
+Number of unit tests:                      44
+Number of scenario tests:                  4
+Total test coverage:                       88% of lines of code
+GIT commit identifier at start of story:   365edd40c7123cbc6cdd658fab2f7dd1fb2b376c
+GIT commit identifier at end of story:     f7a0705d5b1448480e171035c7386161042d259d
+Time spent on user story:                  Natália Klementová:  32h
+                                           Margo Parmentier:    45h
+                                           Alexandra Stanciu:   37h
+                                           Kasper Vandenhaute:  33h
+                                           Vik Vanderlinden:    36h
+Optional remarks:

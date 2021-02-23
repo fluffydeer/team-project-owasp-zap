@@ -1,0 +1,3 @@
+www.domain101.com, redirect1
+www.domain201.kom, redirect2
+goggle.com, google.com

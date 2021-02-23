@@ -1,0 +1,17 @@
+26/10/19:   Set up of the gradle tasks to build and deploy our addon in the zaproxy project.
+
+27/10/19:   Implementation of our first design using the PassiveScannerPlugin.
+
+28/10/19:   Team meeting from 8h - 11h30 to put together the implementation that was written over the weekend.
+            Implementation based on the PassiveScannerPlugin.
+
+29/10/19:   Team meeting from 16h - 18h: new class diagram constructed.
+            Did some tests on using the PassiveScannerPlugin: we found out that the passive scanner does not block any incoming requests.
+            The passive scanner only scans through every request and response, but sends it through to the server in any case.
+            
+30/10/19:   Testing with other classes in Parosproxy: the OverwriteMessageProxyListener can overwrite http requests and responses.
+            We can then extend the ExtensionAdapator and implement the OverwriteMessageProxyListener
+            
+31/10/19:   Team meeting from 15h - 18h to implement the new design. Meeting scheduled with supervisor at 16h 
+            but the supervisor didn't show. We will reschedule a new meeting the next week.
+            Divided tasks among the team members to finish the current code. We aim to hand in this user story next week.

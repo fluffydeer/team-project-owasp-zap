@@ -1,0 +1,33 @@
+file system typosquating
+
+whitelist and blacklist
+two seperate files?
+
+whitelist contains all visited sites but no garanty that it is save. First visit can be a typo.
+BlackList contains sites that the user has indicated to be wrong/unsafe.
+Possibility to change a whitelisted or black listed domain name?
+
+load lists in to memory on boot?
+	- adv: faster loading times for sites
+	- disadv: possibly slower program start, but since addons run in there seperate thread this may not be a problem
+	- disadv: sets may be to big, use to much memory
+
+	possibly an intermediate solution with caching of often used/last used sites
+
+check:
+	- always typosquating test or first lookup in white and blacklist?
+	- test is probably faster than lookup in both lists
+
+functionality:
+	- load file
+	- isWhiteListed()
+	- isBlackListed()
+	- addToWhiteList()
+	- addToBlackList()
+	- remove?
+
+design:
+	- AbstractFileClass -> WhiteListFile, BlackListFile
+	or FileController to do everything
+
+Zaproxy has a file manager build in, creating and reading files seem to be simple method calls.

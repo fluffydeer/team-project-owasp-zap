@@ -1,0 +1,20 @@
+SIGNOFF CARD
+
+Group:                                     03
+User Story:                                02 ("Policy Language")
+Level of completeness:                     Completed.
+Date completed:                            13/12/2019
+Number of unit tests:                      95
+Number of scenario tests:                  8
+Total test coverage:                       80% of lines of code
+Total test coverage without UI:            94% of lines of code
+GIT commit identifier at start of story:   304d1f26ef467260b3edcede11d5c5a0da1f8301
+GIT commit identifier at end of story:	   64800f08532eec5ed74063bf09bfb6a72ec6f443
+Time spent on user story:                  Natália Klementová:  30h
+                                           Margo Parmentier:    25h
+                                           Alexandra Stanciu:   16h
+                                           Kasper Vandenhaute:  35h
+                                           Vik Vanderlinden:    33h
+Optional remarks:
+DSL Syntax Documentation: /solutions/user_story_02/DSL-syntax-documentation.md
+Class diagram: /solutions/user_story_02/class-diagram-v2019.12.13.4.jpg

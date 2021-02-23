@@ -1,0 +1,4 @@
+P:Example policy 2;
+
+R:Traffic over HTTPS:
+    REQ HEAD IS SECURE;

@@ -1,0 +1,80 @@
+1. Show where typosquat?
+
+Up to us: just show original and confused is probs best.
+
+2. Site blacklisted, do we immediately redirect next time?
+
+(--Better to ask again probably--)
+No, redirect immediately, because it makes more sense
+
+Do we need to be able to revert decisions?
+
+Not specified => Shouldn't make ik more difficult than strictly specified in assignment.
+"it's only an assignment"
+
+3. Typosquat + multiple options?
+
+Yes, show multiple options
+=> Similarity functions + sort based on that.
+(not required to prioritize, but just show multiple that are possible)
+
++ Show multiple redirect options
+
+3. Do not proceed?
+
+Yes, goes to the blank/home-page of the browser.
+
+===========================================================
+
+Extending ZAPROXY:
+
+Passive/active:
+
+scanHTTPRequestSend() called before send, other after response.
+	=> Alter response in method that received response
+	Harm is done in the content.
+	We can wait until response to check.
+
+No redirection, generate new page with options and send out.
+
+User clicks button => url should indicate what user selected and so ZAP can filter out (see parameter indicates it's trusted).
+html submit button: action-param is url. Then url has param that indicates it's ok => SECURE, not fixed param (random generated stuff : UUID for example).
+
+===========================================================
+
+DIAGRAMS
+
+Fine to add pscanner in the core in list of extensions.
+Should implement extensions using Gradle (add new gradle project).
+NOT modify ZAPROXY core.
+
+=> Maybe look at za-extensions for example.
+
+====
+
+Suggestion: Comply with ZAPROXY terminology (PassiveScanner etc).
+			Controller, why?
+
+			PassiveScan: only two methods => only two interactions. (Not 3rd and 4th)
+						Redirect is just new url, therefore not ZAP that does redirect.
+						Controller is redundant, is doing exactly what scanner should do.
+
+Not a good idea to let constructor generate HTML, better have method => some kind of factory.
+	Call when need html => generate in method.
+
+Also raise alert.
+
+UserDecision: good that it's seperated.
+
+-> Redundancy removed + adapt names, rest ok.
+
+==========================================================
+
+Regex is ok for typosquat detection.
+Also search for similarity-functions. Not in ZAPROXY, in external lib (that's ok).
+
+seperate project in same workspace, will generate .JAR, look up interaction with ZAP.
+
+Whitelist: 	initialize ourselves. Should keep track because it's stated in the assignment.
+			large? just domainname. Intermediate cache of some size.
+				=> HashMap of specific site, always check size of map.

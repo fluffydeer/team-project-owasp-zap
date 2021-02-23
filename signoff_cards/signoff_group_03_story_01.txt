@@ -1,0 +1,18 @@
+SIGNOFF CARD
+
+Group:                                     03
+User Story:                                01 ("Policy rule verifier")
+Level of completeness:                     Completed.
+Date completed:                            27/11/2019
+Number of unit tests:                      44
+Number of scenario tests:                  4
+Total test coverage:                       62% of lines of code
+Total test coverage without UI:            84% of lines of code
+GIT commit identifier at start of story:   012434ba269262397b05228088faea4ec3c2df8b
+GIT commit identifier at end of story:     b4389e4539d6495f6f93659556b5d5f0009581db      
+Time spent on user story:                  Natália Klementová:  27h
+                                           Margo Parmentier:    46h
+                                           Alexandra Stanciu:   28h
+                                           Kasper Vandenhaute:  18h
+                                           Vik Vanderlinden:    23h
+Optional remarks:

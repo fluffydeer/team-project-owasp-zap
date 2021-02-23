@@ -1,0 +1,24 @@
+1/12/2019:	more work on RuleParser + refactoring
+
+2/12/2019: 	added CONTAINS
+			added literals
+			PolicyParser done and tested
+
+3/12/2019: 	update to package structure
+
+4/12/2019:	all expressions are made by the ExpressionFactory
+		
+5/12/2019:	meeting with supervisor
+			added javadoc for Policy and PolicyParser
+			tests for tokenizer
+
+6/12/2019:	made file loader for dsl
+			refactoring UI to be less coupled
+			create rules written in DSL
+
+7/12/2019:	javadoc for U1
+			update readme for U1
+			changed desing of RuleParser, different steps are reflected in diagram
+			refactoring of dialogs
+			
+

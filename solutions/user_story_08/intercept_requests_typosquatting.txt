@@ -1,0 +1,26 @@
+Passive scan rule: 	- warn the user of potential vulnerabilities that can be detected passively.
+				- they are not allowed to make any new requests or responses in any way
+				- they run against all requests and responses that flow through ZAP. They run in a separate background thread.
+				- they can be enabled / disabled by the user.
+
+TyposquattingScanner extends PluginPassiveScanner: 
+		location: https://github.com/CW-OSS/Group03/tree/master/zaproxy/zap/src/main/java/org/zaproxy/zap/extension/pscan
+2 key methods:	- public void scanHttpRequestSend(HttpMessage msg, int id)
+				we will have to implement this method to do typosquatting prevention
+				- public void scan HttpResponseReceuve(HttpMessage msg, int id, Source source)
+				we don't need this for this user story, so just leave this method empty
+you can raise a potential vulnerability via the method: PassiveScanThread.raiseAlert(int id, Alert alert)
+
+Class PassiveScanThread: 	- starts up all passive scanners that are enabled in the PassiveScannerList passed to the constructor
+						- the run() method here loops over all passive scanners and executes the 2 key methods from the passive scanner, which then raise alerts if a scan rule is broken.
+						- the raiseAlert method sends through the alert to ExtensionAlert class 
+							-> don't know yet what this class then does with the alert. 
+							-> For active scans there seem to be some options, but I don't see anything about showing a warning page.
+
+Class Alert: 	- contains all information on the Alert that we raise and assigns it to a history reference.
+			- doesn't take any action itself
+
+
+
+
+

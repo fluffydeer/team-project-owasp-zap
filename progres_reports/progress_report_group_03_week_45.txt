@@ -1,0 +1,13 @@
+04/11/2019:   Meeting from 8h - 11h to merge all the code that was written during the weekend.
+              Merged specifically changes made by Vik and Kasper regarding the SessionManager.
+              Started first scenario tests implementation.
+              
+06/11/2019:   Added unit tests for classes with not enough code coverage. Fixed some failing tests.
+              Finished the scenario tests + renaming of some classes to make them more logical.
+              
+07/11/2019:   Creation of class diagrams and sequence diagrams.
+              
+08/11/2019:   Team meeting from 8h - 10h30 to prepare sign-off meeting and chose new user story.
+              Sign-off meeting at 9 a.m. for user story 8. Typosquatting Prevention.
+              New user story 1. Policy Rule Verifier chosen.
+              Scheduled a meeting with our supervisor at 9:30 a.m. om Tuesday.

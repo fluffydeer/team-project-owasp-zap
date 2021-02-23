@@ -1,0 +1,5 @@
+www.domain1.com
+www.domain2.be
+www.domain3.nl
+www.domain4.org
+newDomain.test

@@ -1,0 +1,18 @@
+17/11/2019:   Implementation of the .jar loader + start of UI implementation
+              Implementation of the 5 suggested rule classes. Still in need of 2 extra classes.
+
+19/11/2019:   Small update done on one of the Rule classes.
+              Fixed last part of the UI implementation: 
+              You can now load a .jar from the Analyse menu in ZAP
+
+20/11/2019:   Update of the class diagram done: model view controller pattern:
+              model (ExtensionPolicyRuleVerifier) 
+              view (PolicyRuleDialog) 
+              controller (PolicyJarLoader)
+              README file made to load a .jar file with our extension.
+
+21/11/2019:   realized there are some issues running the extension on Windows
+              on Mac it runs perfectly: still unknown what the exact problem is.
+
+22/11/2019:   9h-9h30: short status meeting
+              9h30-10h: meeting with supervisor, see meeting notes for more details

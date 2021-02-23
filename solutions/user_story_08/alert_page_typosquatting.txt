@@ -1,0 +1,20 @@
+Made a pscanrule addon using the zap-extensions package.
+    > Downloaded zip from github and extracted.
+    > Buildfiles and such are builtin in this repo => not difficult
+To make pscanrule, just add new class to the correct folder (/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/.) that inherits PluginPassiveScanner.
+    > IntelliJ will ask to override some methods.
+    > Following methods are needed: 'scanHttpRequestSend,' 'scanHttpResponseReceive,' 'getName,' 'setParent' and 'getPluginId.'
+
+To build the addon go into the gradle tasks and run zap-extensions/addOns/pscanrules/Tasks/build/build. It is possible that you will have to run other tasks (when encountering errors, I don't know why) like zap-extensions/Tasks/Verification/spotlessApply.
+The .zap-file should now be generated (if built without errors) in zap-extensions/addOns/pscanrules/build/zapAddOn/bin/.
+
+Now open ZAPROXY and go to 'File' > 'Load Add-on File...' and select the .zap-file found generated above (1 file for all passive scanners).
+The passive scanners will now start and as soon as you load a new resource in the browser, you will see the output of the passive scanner.
+
+When raising an alert, a couple of extra methods must be present to enter the required info into the alert. After generating the Alert-instance, the passive scanner dispatches it to it's parent (parent.raiseAlert(int id, Alert alert)).
+    > This method will continue with the alert, add it to the history and call other methods to insert the Alert into a DB.
+
+When generating a report in the ZAP UI ('Report' > 'Generate HTML Report...' > Save to preferred location), the of alerts of our sample-scanner are included in the report.
+
+Notice that there is no blocking of requests/responses whatsoever when handling them in the passive scanner, neither is there any block when raising an Alert.
+Also notice the example class and the zap-extensions-folder are not added on github because the folder is huge.

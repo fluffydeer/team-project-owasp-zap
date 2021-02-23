@@ -1,0 +1,17 @@
+P:name of this cool policy;
+R:name of first rule:
+    NOT RES BODY IS Error
+    AND
+    (
+    REQ HEAD Status IS 200
+    OR        
+    REQ HEAD Status IS 302
+    );
+R:name of second rule:
+    NOT RES BODY IS Error
+    AND
+    (
+    REQ HEAD Status IS 200
+    OR
+    REQ HEAD Status IS 302
+    );

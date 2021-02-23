@@ -1,0 +1,18 @@
+P:Example policy;
+
+R:Traffic over HTTPS:
+    REQ HEAD MATCHES https
+    ;
+
+R:Generic email address:
+    NOT REQ HEAD MATCHES [a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+
+    ;
+
+R:Disallow google:
+	NOT REQ HEAD Host IS www.google.com;
+
+R:The request status NOT IN 200,201:
+  	REQ HEAD status NOT IN [200, 201];
+
+R:The response header is 400:
+    RESP HEAD Status IS 400;

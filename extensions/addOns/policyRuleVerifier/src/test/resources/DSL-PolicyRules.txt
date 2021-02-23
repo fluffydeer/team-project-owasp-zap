@@ -1,0 +1,12 @@
+P:Example policy;
+
+R:Traffic over HTTPS:
+    REQ HEAD MATCHES https
+    ;
+
+R:Generic email address:
+    NOT REQ HEAD MATCHES [a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+
+    ;
+
+R:Is this google?:
+	NOT REQ HEAD Host IS www.google.com;

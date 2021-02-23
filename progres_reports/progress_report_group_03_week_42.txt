@@ -1,0 +1,10 @@
+18/10/2019: First group meeting:  - made sure everyone in the group had the Git repository on their local machine.
+                                  - collectively went over all user stories in the assignment and decided to go for user story 8.
+                                  - tried to get to know ZAP, try and find out how it works, how it sends requests / receives responses
+                                  - divided subtasks of user story 8. Typosquatting prevention between the team members
+Next meeting:   meet up on Friday 25/10/2019 at 8 a.m.
+                agenda:   - share new insights regarding the zap source code: give ourselves one week to get to know the code base
+                          - decide on a first design for user story 8.
+                          - set deadlines for this user story
+                          - book a meeting + set agenda with the user story supervisor for next week
+                          - decide on next week's meeting agenda

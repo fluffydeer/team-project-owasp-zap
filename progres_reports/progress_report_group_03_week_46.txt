@@ -1,0 +1,9 @@
+12/11/2019:   Team meeting 8h - 10h30 to prepare first design and go over questions regarding the user story specs.
+              Meeting with the supervisor at 9h30 to go through our first design proposal. See meeting notes for details.
+              Set up project and issues on Git to organize ourselves better.
+              
+14/11/2019:   Start implementation of our design: made structure for new extension + implement interface for Rule and Policy.
+              Implementation of the rules regarding cookie attributes and requests containing a general email address.
+              Some resaerch done on loading a .jar at runtime + providing something in the UI for that.
+
+15/11/2019:   Team meeting 10h - 10h30/ short status meeting

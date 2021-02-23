@@ -1,0 +1,9 @@
+24/10/2019:   Meeting to share our insights with the zaproxy code and come up with a first design for this user story.
+              We discussed the assignment, listed some questions for our supervisor
+              Drawing of a first draft of a class diagram and sequence diagram for this user story
+
+25/10/2019:   First meeting with our user story supervisor.
+              For meeting notes, see Group03/solutions/user_story_08/notes_meeting_supervisor_week_43.txt
+              All classes that need to be implemented are divided between the team + look into building our extensions with Gradle.
+              Next meeting set on Monday 28/10/2019 at 8 a.m. to put all the code together.
+              Goal = finish this user story by Thursday 31/10/2019. Go or no-go will be decided on Monday.

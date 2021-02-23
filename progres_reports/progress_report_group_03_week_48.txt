@@ -1,0 +1,28 @@
+24/11/2019:   Fix the reporting part of U1: 
+              alerts are not working, so switched to a dialog in the zaproxy UI
+              
+25/11/2019:   Focus on getting a high enough test coverage.
+              Testing the UI of zaproxy is nearly impossible.
+              Decision to report on test coverage without taking into account the UI parts.
+              
+26/11/2019:   Created scenario tests for U1.
+              Created the final class diagram.
+
+ 				Created initial desing for U2:
+ 				- grammar
+ 				- proof of concept top down parser in python
+
+
+27/11/2019:   Finish U1
+              made signoff card for the sign off meeting on Friday.
+
+              U2 parser in Java.
+              U2 expressions made. (interpreter pattern)
+
+28/11/2019:   Sign off meeting.
+              Noticed some mistakes in the class diagram: associations updated.
+
+29/11/2019:		Made expressions generic in output.
+
+30/11/2019: 	Started on policy parser
+             
