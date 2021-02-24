@@ -1,3 +1,5 @@
+# OWASP ZAP Extensions
+
 During my Erasmus exchange stay at KU Leuven, Belgium in 2019 I was a part of a project for course called Design of Software Systems.
 We were working on OWASP ZAP which is an open-source web application security scanner. 
 
